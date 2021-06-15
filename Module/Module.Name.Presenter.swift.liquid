@@ -1,0 +1,43 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import VIPERLib
+// ...........
+final class {{ module_info.name }}Presenter: Presenter<{{ module_info.name }}Module> {
+    // ...........
+    enum Display {
+        // ✔️ NONE
+    }
+    //  MARK: PROPERTIES
+    // ////////////////////////////////////
+    /// - Parameters:
+    ///
+    ///     - model:            {{ module_info.name }}Model.
+    ///
+    ///     - moduleDelegate:   [Presentrer -> Module Delegate] interface.
+    ///
+    ///     - controller:       [Presentrer -> Controller] interface.
+    ///     - interactor:       [Presentrer -> Interactor] interface.
+    ///     - router:           [Presentrer -> Router] interface.
+    ///
+}
+
+//                                      MARK: - CONTROLLER -> PRESENTER
+//..............................................................................................
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ControllerToPresenterInterface {
+    // ...........
+    func didAction(_ action: {{ module_info.name }}Controller.Action) {
+        // ✔️ NONE
+    }
+}
+
+//                                      MARK: - INPUT
+//..............................................................................................
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InputInterface {
+    // ✔️ NONE
+}
